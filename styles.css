@@ -120,6 +120,7 @@ footer { padding:28px clamp(24px,5vw,78px); background:var(--navy); color:#a9bfd
 .cover-03 { background:linear-gradient(145deg,#071f38 0%,#14558f 60%,#3b8dc8 100%); }
 .cover-04 { background:linear-gradient(145deg,#101d38 0%,#304f83 55%,#6c8fc4 100%); }
 .cover-05 { background:linear-gradient(145deg,#06304f 0%,#08749f 58%,#58b2d5 100%); }
+.cover-06 { background:linear-gradient(145deg,#071b34 0%,#17658f 58%,#64b8d8 100%); }
 .cover-top { display:flex; justify-content:space-between; align-items:center; }
 .cover-category { text-transform:uppercase; letter-spacing:.15em; font-size:10px; font-weight:800; }
 .cover-index { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:11px; color:rgba(255,255,255,.72); }
