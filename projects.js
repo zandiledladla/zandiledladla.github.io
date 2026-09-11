@@ -1,6 +1,18 @@
 export const projects = [
   {
-    slug:"misinformation-detection-system", number:"01", title:"Misinformation Detection System", category:"Machine Learning · NLP",
+    slug:"finflow-transaction-api", number:"01", title:"FinFlow Transaction Processing API", category:"Backend Engineering · FinTech",
+    summary:"A tested Python API for customer accounts and reliable money movement, designed around validation, transaction integrity, and production-style engineering practices.",
+    image:"projects/finflow-architecture.svg", imageAlt:"FinFlow architecture connecting FastAPI routes, transaction services, SQLAlchemy, and PostgreSQL", status:"Application-ready MVP", type:"Independent personal project",
+    tags:["Python","FastAPI","SQLAlchemy","PostgreSQL","pytest","Docker","GitHub Actions","OpenAPI"],
+    problem:"Financial transaction systems must protect balances and maintain consistent records when deposits, withdrawals, transfers, or invalid requests occur.",
+    solution:"FinFlow separates HTTP routes, validated schemas, business services, and persistence. It uses fixed-precision monetary values, database transactions, deterministic row locking, balance checks, currency validation, and automated tests to protect core workflows.",
+    features:["Customer and account creation","Deposits and withdrawals","Atomic account transfers","Insufficient-funds protection","Currency and request validation","Paginated transaction history","Account-specific statements","Request IDs and structured logging","Swagger/OpenAPI documentation","Automated PostgreSQL CI testing"],
+    contribution:"Designed and implemented the complete backend architecture, relational models, REST endpoints, transaction rules, validation, logging, automated tests, local SQLite workflow, PostgreSQL configuration, Docker setup, demonstration data, and continuous-integration pipeline.",
+    outcome:"Delivered an application-ready MVP with eight passing automated tests, interactive API documentation, a repeatable demo workflow, and a GitHub Actions pipeline configured to validate the application against PostgreSQL.",
+    github:"https://github.com/zandiledladla/finflow-transaction-api"
+  },
+  {
+    slug:"misinformation-detection-system", number:"02", title:"Misinformation Detection System", category:"Machine Learning · NLP",
     summary:"A hybrid misinformation-detection prototype comparing a traditional machine-learning classifier with interpretable linguistic rules.",
     image:"projects/misinformation-detection.png", imageAlt:"Misinformation detection interface displaying machine-learning and rule-based results", status:"Working prototype", type:"Individual honours project",
     tags:["Python","NLP","TF-IDF","Logistic Regression","Gradio","scikit-learn"],
@@ -12,7 +24,7 @@ export const projects = [
     github:"https://github.com/zandiledladla/Online-Misinformation-Detection-System"
   },
   {
-    slug:"shiftwyse", number:"02", title:"ShiftWyse", category:"AI · Cloud Web Application",
+    slug:"shiftwyse", number:"03", title:"ShiftWyse", category:"AI · Cloud Web Application",
     summary:"An AI-powered leadership companion designed to give South African nurses accessible, personalised professional-development support.",
     image:"projects/shiftwyse-dashboard.webp", imageAlt:"ShiftWyse dashboard with leadership assessment, AI chat, mentor matching, and progress actions", status:"Deployed", type:"University team project",
     tags:["JavaScript","Firebase","Firestore","Cloud Functions","Gemini","Web Speech API"],
@@ -24,7 +36,7 @@ export const projects = [
     live:"https://shiftwyse-473820.web.app/consent"
   },
   {
-    slug:"relational-database-crud", number:"03", title:"Relational Database CRUD App", category:"Backend · Database",
+    slug:"relational-database-crud", number:"04", title:"Relational Database CRUD App", category:"Backend · Database",
     summary:"A command-line student-record manager demonstrating persistent storage, database integration, and complete CRUD operations.",
     image:"projects/relational-database-crud.png", imageAlt:"Terminal output from the student record manager showing records being added", status:"Completed", type:"Individual project",
     tags:["Python","SQLite","SQL","CLI","Data Validation"],
@@ -37,7 +49,7 @@ export const projects = [
     gallery:[{src:"projects/relational-database-view-records.png",alt:"Student record manager displaying all saved student records from SQLite"}]
   },
   {
-    slug:"distributed-task-processing", number:"04", title:"Distributed Task Processing Simulation", category:"Concurrency · Distributed Systems",
+    slug:"distributed-task-processing", number:"05", title:"Distributed Task Processing Simulation", category:"Concurrency · Distributed Systems",
     summary:"A Python simulation of concurrent task generation, worker processing, failure handling, and automatic retries.",
     image:"projects/distributed-system-simulation.png", imageAlt:"Terminal output showing distributed tasks being processed, retried, and completed", status:"Completed", type:"Independent personal project",
     tags:["Python","Threading","Queues","Concurrency","Fault Handling"],
@@ -49,7 +61,7 @@ export const projects = [
     github:"https://github.com/zandiledladla/distributed-system-simulation"
   },
   {
-    slug:"sound-level-monitoring", number:"05", title:"Sound Level Monitoring System", category:"IoT · Networking",
+    slug:"sound-level-monitoring", number:"06", title:"Sound Level Monitoring System", category:"IoT · Networking",
     summary:"A Raspberry Pi system that monitors ambient sound and sends threshold alerts to a client device using UDP communication.",
     image:"projects/sound-monitoring-main.webp", imageAlt:"Raspberry Pi connected to a microphone sensor and breadboard for sound monitoring", status:"Completed", type:"University team project",
     tags:["Python","Raspberry Pi","IoT","UDP","NumPy","sounddevice"],
