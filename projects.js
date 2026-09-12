@@ -76,9 +76,10 @@ export const projects = [
 ];
 
 export const coverCode={
-  "01":{label:"NLP pipeline",code:"prediction = model.predict(text)",signal:"TF-IDF  →  LOGISTIC REGRESSION"},
-  "02":{label:"Cloud application",code:"await leadershipCoach.respond()",signal:"FIREBASE  ×  GEMINI"},
-  "03":{label:"Data layer",code:"SELECT * FROM students;",signal:"CREATE  •  READ  •  UPDATE  •  DELETE"},
-  "04":{label:"Worker system",code:"task_queue.put(next_task)",signal:"PRODUCER  →  QUEUE  →  WORKER"},
-  "05":{label:"IoT network",code:"socket.sendto(sound_level)",signal:"SENSOR  →  RASPBERRY PI  →  CLIENT"}
+  "01":{label:"Transaction API",code:"await transfer_funds(request)",signal:"FASTAPI  →  SQLALCHEMY  →  POSTGRESQL"},
+  "02":{label:"NLP pipeline",code:"prediction = model.predict(text)",signal:"TF-IDF  →  LOGISTIC REGRESSION"},
+  "03":{label:"Cloud application",code:"await leadershipCoach.respond()",signal:"FIREBASE  ×  GEMINI"},
+  "04":{label:"Data layer",code:"SELECT * FROM students;",signal:"CREATE  •  READ  •  UPDATE  •  DELETE"},
+  "05":{label:"Worker system",code:"task_queue.put(next_task)",signal:"PRODUCER  →  QUEUE  →  WORKER"},
+  "06":{label:"IoT network",code:"socket.sendto(sound_level)",signal:"SENSOR  →  RASPBERRY PI  →  CLIENT"}
 };
