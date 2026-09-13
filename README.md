@@ -15,7 +15,7 @@ My professional portfolio presenting selected software, machine-learning, cloud,
 
 ## Highlights
 
-- Five detailed project case studies
+- Six detailed project case studies
 - Responsive and keyboard-accessible interface
 - Privacy-safe downloadable CV
 - Education, certifications and leadership experience
