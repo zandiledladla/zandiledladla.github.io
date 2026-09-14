@@ -14,6 +14,7 @@ export const projects = [
       {src:"projects/finflow-demo-workflow.jpg", alt:"FinFlow guided transfer workflow after a successful R125 transfer between demo accounts"}
     ],
     live:"https://finflow-demo-7iri.onrender.com/demo",
+    demo:"https://youtu.be/_msVTq99_nU",
     github:"https://github.com/zandiledladla/finflow-transaction-api"
   },
   {
