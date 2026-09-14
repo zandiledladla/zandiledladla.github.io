@@ -1,4 +1,4 @@
-import {projects} from "./projects.js?v=4";
+import {projects} from "./projects.js?v=5";
 
 const id=new URLSearchParams(location.search).get("id");
 const project=projects.find(p=>p.slug===id);
@@ -11,7 +11,7 @@ else{
   document.querySelector("#case-page").innerHTML=`
     <a class="skip-link" href="#case-study">Skip to case study</a>
     <nav class="site-nav case-nav" aria-label="Project navigation"><a class="wordmark" href="index.html">ZD<span>.</span></a><a class="back-link" href="index.html#work">← All projects</a><a class="nav-cta" href="Zandile-Dladla-CV.pdf" download="Zandile-Dladla-Public-CV.pdf">Download CV ${arrow}</a></nav>
-    <header class="case-hero" id="case-study"><div class="case-label">${project.number} / ${project.category}</div><h1>${project.title}</h1><p>${project.summary}</p><div class="case-actions">${project.live?`<a class="button button-primary" href="${project.live}" target="_blank" rel="noreferrer">View live project ${arrow}</a>`:""}${project.github?`<a class="button button-outline" href="${project.github}" target="_blank" rel="noreferrer">View source code ${arrow}</a>`:""}</div></header>
+    <header class="case-hero" id="case-study"><div class="case-label">${project.number} / ${project.category}</div><h1>${project.title}</h1><p>${project.summary}</p><div class="case-actions">${project.live?`<a class="button button-primary" href="${project.live}" target="_blank" rel="noreferrer">View live project ${arrow}</a>`:""}${project.demo?`<a class="button button-outline" href="${project.demo}" target="_blank" rel="noreferrer">Watch demo ${arrow}</a>`:""}${project.github?`<a class="button button-outline" href="${project.github}" target="_blank" rel="noreferrer">View source code ${arrow}</a>`:""}</div></header>
     <div class="case-cover case-cover-contained"><img src="${project.image}" alt="${project.imageAlt}"></div>
     <section class="case-facts"><div><span>Status</span><strong>${project.status}</strong></div><div><span>Project type</span><strong>${project.type}</strong></div><div><span>Role</span><strong>${project.type.includes("team")?"Contributor":"Designer & developer"}</strong></div></section>
     <section class="case-section two-column"><div class="case-section-title">01 / Overview</div><div class="case-content"><div><h2>The challenge</h2><p>${project.problem}</p></div><div><h2>The solution</h2><p>${project.solution}</p></div></div></section>
