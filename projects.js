@@ -1,14 +1,15 @@
 export const projects = [
   {
     slug:"finflow-transaction-api", number:"01", title:"FinFlow Transaction Processing API", category:"Backend Engineering · FinTech",
-    summary:"A tested Python API for customer accounts and reliable money movement, designed around validation, transaction integrity, and production-style engineering practices.",
-    image:"projects/finflow-architecture.svg", imageAlt:"FinFlow architecture connecting FastAPI routes, transaction services, SQLAlchemy, and PostgreSQL", status:"Application-ready MVP", type:"Independent personal project",
-    tags:["Python","FastAPI","SQLAlchemy","PostgreSQL","pytest","Docker","GitHub Actions","OpenAPI"],
-    problem:"Financial transaction systems must protect balances and maintain consistent records when deposits, withdrawals, transfers, or invalid requests occur.",
-    solution:"FinFlow separates HTTP routes, validated schemas, business services, and persistence. It uses fixed-precision monetary values, database transactions, deterministic row locking, balance checks, currency validation, and automated tests to protect core workflows.",
-    features:["Customer and account creation","Deposits and withdrawals","Atomic account transfers","Insufficient-funds protection","Currency and request validation","Paginated transaction history","Account-specific statements","Request IDs and structured logging","Swagger/OpenAPI documentation","Automated PostgreSQL CI testing"],
-    contribution:"Designed and implemented the complete backend architecture, relational models, REST endpoints, transaction rules, validation, logging, automated tests, local SQLite workflow, PostgreSQL configuration, Docker setup, demonstration data, and continuous-integration pipeline.",
-    outcome:"Delivered an application-ready MVP with eight passing automated tests, interactive API documentation, a repeatable demo workflow, and a GitHub Actions pipeline configured to validate the application against PostgreSQL.",
+    summary:"A deployed Python API that explores safe money movement when slow or unstable connections cause clients to retry payment requests.",
+    image:"projects/finflow-architecture.svg", imageAlt:"FinFlow architecture connecting FastAPI routes, transaction services, SQLAlchemy, and PostgreSQL", status:"Deployed demonstration", type:"Independent personal project",
+    tags:["Python","FastAPI","SQLAlchemy","PostgreSQL","pytest","Docker","Idempotency","GitHub Actions"],
+    problem:"When a connection is slow or unstable, a person may retry a payment because it is unclear whether the first request succeeded. A naive system can apply the request twice, update only one account, or leave balances inconsistent.",
+    solution:"FinFlow separates HTTP routes, validated schemas, business services, and persistence. It uses fixed-precision monetary values, atomic database transactions, deterministic row locking, balance and currency checks, and idempotency keys that make client retries safe.",
+    features:["Interactive public demo","Customer and account creation","Deposits and withdrawals","Atomic account transfers","Idempotent payment retries","Conflicting-key detection","Insufficient-funds protection","Currency and request validation","Account statements","Request IDs and structured logging","Swagger/OpenAPI documentation","Automated CI testing"],
+    contribution:"Identified the duplicate-payment retry problem and designed the complete backend architecture, relational models, REST endpoints, transaction rules, validation, idempotency handling, logging, automated tests, Docker setup, interactive demo and continuous-integration pipeline.",
+    outcome:"Delivered a public demonstration with 11 passing automated tests, live API documentation and a guided transfer workflow. Engineering decisions and limitations are documented openly: the demo uses disposable fictional data and is not a production banking product.",
+    live:"https://finflow-demo-7iri.onrender.com/demo",
     github:"https://github.com/zandiledladla/finflow-transaction-api"
   },
   {
