@@ -9,6 +9,10 @@ export const projects = [
     features:["Interactive public demo","Customer and account creation","Deposits and withdrawals","Atomic account transfers","Idempotent payment retries","Conflicting-key detection","Insufficient-funds protection","Currency and request validation","Account statements","Request IDs and structured logging","Swagger/OpenAPI documentation","Automated CI testing"],
     contribution:"Identified the duplicate-payment retry problem and designed the complete backend architecture, relational models, REST endpoints, transaction rules, validation, idempotency handling, logging, automated tests, Docker setup, interactive demo and continuous-integration pipeline.",
     outcome:"Delivered a public demonstration with 11 passing automated tests, live API documentation and a guided transfer workflow. Engineering decisions and limitations are documented openly: the demo uses disposable fictional data and is not a production banking product.",
+    gallery:[
+      {src:"projects/finflow-demo-overview.jpg", alt:"FinFlow public demo showing the project purpose, safeguards, and guided workflow"},
+      {src:"projects/finflow-demo-workflow.jpg", alt:"FinFlow guided transfer workflow after a successful R125 transfer between demo accounts"}
+    ],
     live:"https://finflow-demo-7iri.onrender.com/demo",
     github:"https://github.com/zandiledladla/finflow-transaction-api"
   },
