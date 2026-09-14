@@ -1,4 +1,4 @@
-import {projects,coverCode} from "./projects.js?v=2";
+import {projects,coverCode} from "./projects.js?v=3";
 
 const arrow='<span aria-hidden="true">↗</span>';
 document.querySelector("#portfolio-grid").innerHTML=projects.map((p)=>`

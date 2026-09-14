@@ -1,4 +1,4 @@
-import {projects} from "./projects.js";
+import {projects} from "./projects.js?v=3";
 
 const id=new URLSearchParams(location.search).get("id");
 const project=projects.find(p=>p.slug===id);
